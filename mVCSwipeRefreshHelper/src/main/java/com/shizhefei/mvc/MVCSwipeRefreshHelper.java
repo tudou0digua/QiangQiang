@@ -1,13 +1,13 @@
 package com.shizhefei.mvc;
 
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.view.View;
 
 import com.shizhefei.mvc.ILoadViewFactory.ILoadMoreView;
 import com.shizhefei.mvc.ILoadViewFactory.ILoadView;
+
+import java.lang.reflect.Field;
+import java.lang.reflect.Method;
 
 /**
  * 注意 ：<br>

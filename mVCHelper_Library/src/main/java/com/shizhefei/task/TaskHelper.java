@@ -1,10 +1,10 @@
 package com.shizhefei.task;
 
-import com.shizhefei.mvc.RequestHandle;
-
 import android.annotation.TargetApi;
 import android.os.AsyncTask;
 import android.os.Build;
+
+import com.shizhefei.mvc.RequestHandle;
 
 /**
  * task执行类
