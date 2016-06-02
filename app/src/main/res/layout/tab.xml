@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:my="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="140px"
+    android:background="@drawable/tab_bg"
+    android:orientation="horizontal">
+
+    <com.cb.qiangqiang.view.ChangeColorIconWithText
+        android:id="@+id/tab_hot"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="20px"
+        my:changColor="@color/tab_change_color"
+        my:iconImg="@drawable/icon_hot"
+        my:iconImgSelected="@drawable/icon_hot_selected"
+        my:textContent="@string/tab_hot"
+        my:textDefaultColor="@color/tab_text_color"
+        my:textSize="12sp"/>
+
+    <com.cb.qiangqiang.view.ChangeColorIconWithText
+        android:id="@+id/tab_bankuai"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="20px"
+        my:changColor="@color/tab_change_color"
+        my:iconImg="@drawable/icon_bankuai"
+        my:iconImgSelected="@drawable/icon_bankuai_selected"
+        my:textContent="@string/tab_bankuai"
+        my:textDefaultColor="@color/tab_text_color"
+        my:textSize="12sp"/>
+
+    <com.cb.qiangqiang.view.ChangeColorIconWithText
+        android:id="@+id/tab_person"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:padding="20px"
+        my:changColor="@color/tab_change_color"
+        my:iconImg="@drawable/icon_personal"
+        my:iconImgSelected="@drawable/icon_personal_selected"
+        my:textContent="@string/tab_person"
+        my:textDefaultColor="@color/tab_text_color"
+        my:textSize="12sp"/>
+
+</LinearLayout>

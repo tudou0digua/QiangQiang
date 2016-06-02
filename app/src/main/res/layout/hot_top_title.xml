@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="140px"
+    android:background="@color/top_title_bg">
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="20px"
+        android:layout_marginLeft="25px"
+        android:background="@drawable/hot_top_bg">
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_width="45px"
+            android:layout_height="45px"
+            app:layout_auto_baseheight="width"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_search_grey"
+            android:layout_marginLeft="15px"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="44px"
+            android:textColor="@color/grey"
+            android:text="搜索帖子"
+            android:paddingLeft="20px"
+            android:layout_toRightOf="@id/iv_search"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_check_in"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:text="签到"
+        android:textSize="44px"
+        android:textColor="@color/white"
+        android:gravity="center_vertical"
+        android:paddingLeft="25px"
+        android:paddingRight="30px"/>
+
+</LinearLayout>

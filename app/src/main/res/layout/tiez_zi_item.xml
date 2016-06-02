@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/tie_zi_item_bg"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="46px"
+        android:layout_marginRight="46px"
+        android:layout_marginTop="70px"
+        android:ellipsize="end"
+        android:gravity="center_vertical"
+        android:lineSpacingExtra="24px"
+        android:maxLines="2"
+        android:text="天猫超市\n全聚德烤鸭"
+        android:textColor="@color/black"
+        android:textSize="44px"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60px"
+        android:layout_marginTop="30px"
+        android:layout_marginLeft="46px"
+        android:layout_marginRight="46px"
+        android:layout_marginBottom="50px"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/icon_publish"
+            android:layout_width="60px"
+            android:layout_height="60px"
+            android:src="@drawable/default_icon"
+            app:civ_border_width="0dp"
+            app:layout_auto_baseheight="width"/>
+
+        <TextView
+            android:id="@+id/name_publish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16px"
+            android:text="agdagfd"
+            android:textColor="@color/hot_item_name"
+            android:textSize="36px"/>
+
+        <TextView
+            android:id="@+id/time_last_reply"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="38px"
+            android:text="1\u5206\u949f\u524d"
+            android:textColor="@color/hot_item_time_view_comment"
+            android:textSize="36px"/>
+
+        <ImageView
+            android:id="@+id/has_pic"
+            android:layout_width="30px"
+            android:layout_height="30px"
+            android:layout_marginLeft="10px"
+            android:src="@drawable/icon_picture"
+            app:layout_auto_baseheight="width"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ImageView
+            android:id="@+id/iv_view"
+            android:layout_width="42px"
+            android:layout_height="36px"
+            android:src="@drawable/read_num_icon"
+            app:layout_auto_baseheight="width"/>
+
+        <TextView
+            android:id="@+id/view_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="2330"
+            android:textColor="@color/hot_item_time_view_comment"
+            android:textSize="30px"/>
+
+        <ImageView
+            android:id="@+id/iv_comment"
+            android:layout_width="42px"
+            android:layout_height="36px"
+            android:layout_marginLeft="46px"
+            android:src="@drawable/post_num_icon"
+            app:layout_auto_baseheight="width"/>
+
+        <TextView
+            android:id="@+id/comment_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10px"
+            android:text="999+"
+            android:textColor="@color/hot_item_time_view_comment"
+            android:textSize="30px"/>
+
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/list_divider_line"/>
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/top_title_bg">
+
+    </LinearLayout>
+
+    <com.zhy.autolayout.AutoRelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top">
+
+        <LinearLayout
+            android:id="@+id/ll_navi"
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:orientation="horizontal"
+            android:background="@color/top_title_bg">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="60px"
+                android:singleLine="true"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"/>
+        </LinearLayout>
+
+        <WebView
+            android:id="@+id/web_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/ll_navi"/>
+
+        <com.zhy.autolayout.AutoFrameLayout
+            android:id="@+id/auto_fl_load"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+                android:layout_width="100px"
+                android:layout_height="100px"
+                app:layout_auto_baseheight="width"
+                android:indeterminate="true"
+                android:tint="@color/top_title_bg"
+                style="@style/Widget.MaterialProgressBar.ProgressBar.Large.NoPadding"
+                android:layout_gravity="center"/>
+
+        </com.zhy.autolayout.AutoFrameLayout>
+
+    </com.zhy.autolayout.AutoRelativeLayout>
+
+</RelativeLayout>

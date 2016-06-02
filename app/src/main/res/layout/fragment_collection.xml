@@ -1,0 +1,76 @@
+<com.zhy.autolayout.AutoRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_navi"
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:orientation="horizontal"
+        android:background="@color/top_title_bg">
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="60px"
+            android:text="我的收藏"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"/>
+        <TextView
+            android:id="@+id/tv_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="44px"
+            android:text="编辑"
+            android:gravity="center_vertical"
+            android:paddingRight="30px"/>
+        <TextView
+            android:id="@+id/tv_finish_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:textSize="44px"
+            android:text="完成"
+            android:gravity="center_vertical"
+            android:paddingRight="30px"
+            android:visibility="gone"/>
+    </LinearLayout>
+
+    <com.maimengmami.waveswiperefreshlayout.WaveSwipeRefreshLayout
+        android:id="@+id/swipe_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:above_wave_color="@color/material_deep_teal_200"
+        app:blow_wave_color="@color/material_deep_teal_500"
+        android:layout_below="@id/ll_navi">
+        <ListView
+            android:id="@+id/collection_listview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:dividerHeight="0dp"
+            android:divider="#00000000">
+        </ListView>
+    </com.maimengmami.waveswiperefreshlayout.WaveSwipeRefreshLayout>
+
+    <com.zhy.autolayout.AutoFrameLayout
+        android:id="@+id/auto_fl_load"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+            android:layout_width="100px"
+            android:layout_height="100px"
+            app:layout_auto_baseheight="width"
+            android:indeterminate="true"
+            android:tint="@color/top_title_bg"
+            style="@style/Widget.MaterialProgressBar.ProgressBar.Large.NoPadding"
+            android:layout_gravity="center"
+            />
+    </com.zhy.autolayout.AutoFrameLayout>
+
+</com.zhy.autolayout.AutoRelativeLayout>

@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "E:\\Workspaces\\android_studio\\QiangQiang\\mVCHelper_Library\\build\\intermediates\\res\\merged\\release\\layout\\layout_listview_foot.xml",
+        "source": "E:\\Workspaces\\android_studio\\QiangQiang\\mVCHelper_Library\\src\\main\\res\\layout\\layout_listview_foot.xml"
+    },
+    {
+        "merged": "E:\\Workspaces\\android_studio\\QiangQiang\\mVCHelper_Library\\build\\intermediates\\res\\merged\\release\\layout\\load_error.xml",
+        "source": "E:\\Workspaces\\android_studio\\QiangQiang\\mVCHelper_Library\\src\\main\\res\\layout\\load_error.xml"
+    },
+    {
+        "merged": "E:\\Workspaces\\android_studio\\QiangQiang\\mVCHelper_Library\\build\\intermediates\\res\\merged\\release\\layout\\load_ing.xml",
+        "source": "E:\\Workspaces\\android_studio\\QiangQiang\\mVCHelper_Library\\src\\main\\res\\layout\\load_ing.xml"
+    },
+    {
+        "merged": "E:\\Workspaces\\android_studio\\QiangQiang\\mVCHelper_Library\\build\\intermediates\\res\\merged\\release\\layout\\load_empty.xml",
+        "source": "E:\\Workspaces\\android_studio\\QiangQiang\\mVCHelper_Library\\src\\main\\res\\layout\\load_empty.xml"
+    }
+]

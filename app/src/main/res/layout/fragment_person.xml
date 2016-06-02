@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_avatar_name"
+            android:layout_width="match_parent"
+            android:layout_height="480px"
+            android:background="@color/top_title_bg">
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/iv_avatar"
+                android:layout_width="180px"
+                android:layout_height="180px"
+                android:src="@drawable/default_icon"
+                app:civ_border_width="0dp"
+                app:layout_auto_baseheight="width"
+                android:layout_centerInParent="true"/>
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_avatar"
+                android:layout_marginTop="30px"
+                android:layout_centerHorizontal="true"
+                android:text=""
+                android:visibility="gone"/>
+            <TextView
+                android:id="@+id/tv_login_or_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_avatar"
+                android:layout_marginTop="30px"
+                android:layout_centerHorizontal="true"
+                android:padding="10dp"
+                android:text="登录/注册"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="140px"
+            android:background="@color/top_title_bg"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/ll_collection"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="收藏"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/tv_collection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:background="@color/grey"/>
+            <LinearLayout
+                android:id="@+id/ll_tie_zi"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="帖子"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/tv_tei_zi"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="1px"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10px"
+                android:layout_marginBottom="10px"
+                android:background="@color/grey"/>
+            <LinearLayout
+                android:id="@+id/ll_msg"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="消息"
+                    android:gravity="center_horizontal"/>
+                <TextView
+                    android:id="@+id/tv_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="--"
+                    android:gravity="center_horizontal"/>
+
+            </LinearLayout>
+                android:background="@color/grey"/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120px">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="设置"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="45px"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

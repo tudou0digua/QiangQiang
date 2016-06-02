@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/iv_verify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="320px"
+        android:minHeight="120px"
+        android:layout_centerHorizontal="true"
+        android:background="@color/red_dark"/>
+    <TextView
+        android:id="@+id/tv_refresh_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="60px"
+        android:text="点击刷新"
+        android:layout_below="@id/iv_verify"
+        android:gravity="center_vertical"
+        android:layout_centerHorizontal="true"/>
+    <EditText
+        android:id="@+id/et_verify"
+        android:layout_width="600px"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:layout_below="@id/tv_refresh_image"
+        android:layout_centerHorizontal="true"/>
+    <Button
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_verify"
+        android:text="提交"/>
+    <me.zhanghai.android.materialprogressbar.MaterialProgressBar
+        android:id="@+id/progress_circle"
+        android:layout_width="100px"
+        android:layout_height="100px"
+        app:layout_auto_baseheight="width"
+        android:indeterminate="true"
+        android:layout_below="@id/et_verify"
+        style="@style/Widget.MaterialProgressBar.ProgressBar.Large.NoPadding"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+[
+    {
+        "outputFile": "E:\\Workspaces\\android_studio\\QiangQiang\\androidsupportv7recyclerview\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 327,
+                    "endColumn": 74,
+                    "endOffset": 397
+                },
+                "from": {
+                    "file": "E:\\Workspaces\\android_studio\\QiangQiang\\androidsupportv7recyclerview\\src\\main\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 812,
+                        "endColumn": 74,
+                        "endOffset": 882
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 402,
+                    "endColumn": 65,
+                    "endOffset": 463
+                },
+                "from": {
+                    "file": "E:\\Workspaces\\android_studio\\QiangQiang\\androidsupportv7recyclerview\\src\\main\\res\\values\\ids.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 765,
+                        "endColumn": 65,
+                        "endOffset": 826
+                    }
+                }
+            }
+        ]
+    }
+]

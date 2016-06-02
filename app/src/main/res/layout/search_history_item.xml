@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.autolayout.AutoLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/tie_zi_item_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="140px"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="64px"
+            android:layout_height="64px"
+            android:src="@drawable/icon_history_grey"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="34px"/>
+        <TextView
+            android:id="@+id/tv_content"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="hahaha^"
+            android:textSize="46px"
+            android:textColor="@color/grey_800"
+            android:layout_marginLeft="16px"
+            android:paddingLeft="30px"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:gravity="center_vertical"/>
+        <ImageView
+            android:id="@+id/iv_delete_history"
+            android:layout_width="124px"
+            android:layout_height="124px"
+            android:layout_gravity="center_vertical"
+            android:padding="30px"
+            android:src="@drawable/icon_delete_grey"/>
+
+    </LinearLayout>
+
+    <include
+        layout="@layout/list_divider_line"/>
+
+</com.zhy.autolayout.AutoLinearLayout>
