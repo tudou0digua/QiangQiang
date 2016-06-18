@@ -38,6 +38,7 @@ import com.cb.qiangqiang.util.PreferencesUtils;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 import com.maimengmami.waveswiperefreshlayout.WaveSwipeRefreshLayout;
+import com.orhanobut.logger.Logger;
 import com.zhy.autolayout.utils.AutoUtils;
 
 import org.json.JSONException;
@@ -196,6 +197,7 @@ public class TieZiListFragment extends Fragment implements WaveSwipeRefreshLayou
                 new Response.Listener<String>() {
                     @Override
                     public void onResponse(String response) {
+                        Logger.json(response);
                         List<TieZiItem> temp = parseData(response);
                         mData = temp;
                         mCurrentPage = 1;

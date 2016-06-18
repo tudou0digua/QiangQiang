@@ -26,6 +26,10 @@ android {
     }
 }
 
+repositories {
+    maven { url "https://jitpack.io" }
+}
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
@@ -46,4 +50,5 @@ dependencies {
     compile 'com.mamengmami.android:waveswiperefreshlayout:1.0.0'
     compile 'me.zhanghai.android.materialprogressbar:library:1.1.4'
     compile 'de.greenrobot:greendao:2.0.0'
+    compile 'com.github.orhanobut:logger:1.12'
 }
