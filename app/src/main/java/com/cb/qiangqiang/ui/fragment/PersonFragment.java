@@ -29,6 +29,7 @@ import com.cb.qiangqiang.model.PersonInfo;
 import com.cb.qiangqiang.ui.activity.CollectionActivity;
 import com.cb.qiangqiang.ui.activity.LoginActivity;
 import com.cb.qiangqiang.ui.activity.TieZiListActivity;
+import com.cb.qiangqiang.ui.dialog.TowBtnDialogFragment;
 import com.cb.qiangqiang.util.PreferencesUtils;
 import com.google.gson.Gson;
 
@@ -56,6 +57,7 @@ public class PersonFragment extends Fragment implements View.OnClickListener{
     private TextView collectionNum;
     private TextView tieZiNum;
     private TextView msgNum;
+    private TextView tvSetting;
 
     //Data----------------------------
     private Context mContext;
@@ -106,12 +108,14 @@ public class PersonFragment extends Fragment implements View.OnClickListener{
         llCollection = (LinearLayout) view.findViewById(R.id.ll_collection);
         llTieZi = (LinearLayout) view.findViewById(R.id.ll_tie_zi);
         llMsg = (LinearLayout) view.findViewById(R.id.ll_msg);
+        tvSetting = (TextView) view.findViewById(R.id.tv_setting);
 
         avatarAndNameContainer.setOnClickListener(this);
         llCollection.setOnClickListener(this);
         llTieZi.setOnClickListener(this);
         llMsg.setOnClickListener(this);
         loginOrRegister.setOnClickListener(this);
+        tvSetting.setOnClickListener(this);
     }
 
     private void init() {
@@ -211,6 +215,20 @@ public class PersonFragment extends Fragment implements View.OnClickListener{
                 break;
             case  R.id.tv_login_or_register:
                 gotoLoginActivity();
+                break;
+            case R.id.tv_setting:
+                TowBtnDialogFragment dialogFragment = TowBtnDialogFragment.newInstance("confirm", "cancel", R.layout.activity_login, new TowBtnDialogFragment.OnDialogClickListener() {
+                    @Override
+                    public void onPositiveClick() {
+
+                    }
+
+                    @Override
+                    public void onNegativeClick() {
+
+                    }
+                });
+                dialogFragment.show(getFragmentManager(), "TowBtnDialogFragment");
                 break;
         }
     }
