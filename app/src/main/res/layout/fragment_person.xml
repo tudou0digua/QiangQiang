@@ -142,6 +142,11 @@
 
         </RelativeLayout>
 
+        <com.nightonke.jellytogglebutton.JellyToggleButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:jtbJelly="active_tremble_head_fatty"/>
+
 
     </LinearLayout>
 

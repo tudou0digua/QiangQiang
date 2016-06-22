@@ -16,6 +16,7 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.android.volley.NetworkResponse;
 import com.android.volley.Response;
@@ -29,7 +30,7 @@ import com.cb.qiangqiang.model.PersonInfo;
 import com.cb.qiangqiang.ui.activity.CollectionActivity;
 import com.cb.qiangqiang.ui.activity.LoginActivity;
 import com.cb.qiangqiang.ui.activity.TieZiListActivity;
-import com.cb.qiangqiang.ui.dialog.TowBtnDialogFragment;
+import com.cb.qiangqiang.ui.dialog.CustomDialogFragment;
 import com.cb.qiangqiang.util.PreferencesUtils;
 import com.google.gson.Gson;
 
@@ -217,18 +218,24 @@ public class PersonFragment extends Fragment implements View.OnClickListener{
                 gotoLoginActivity();
                 break;
             case R.id.tv_setting:
-                TowBtnDialogFragment dialogFragment = TowBtnDialogFragment.newInstance("confirm", "cancel", R.layout.activity_login, new TowBtnDialogFragment.OnDialogClickListener() {
+                CustomDialogFragment.DialogBuilder builder = new CustomDialogFragment.DialogBuilder(){
                     @Override
                     public void onPositiveClick() {
-
+                        super.onPositiveClick();
+                        Toast.makeText(mContext, "confirm clicked = = ", Toast.LENGTH_SHORT).show();
                     }
 
                     @Override
                     public void onNegativeClick() {
-
+                        super.onNegativeClick();
+                        Toast.makeText(mContext, "cancel clicked = = ", Toast.LENGTH_SHORT).show();
                     }
-                });
-                dialogFragment.show(getFragmentManager(), "TowBtnDialogFragment");
+                };
+                builder.message("确定退出？ = =")
+                        .positiveName("确定")
+                        .negativeName("取消");
+                CustomDialogFragment dialogFragment = CustomDialogFragment.newInstance(builder);
+                dialogFragment.show(getFragmentManager(), "CustomDialogFragment");
                 break;
         }
     }
