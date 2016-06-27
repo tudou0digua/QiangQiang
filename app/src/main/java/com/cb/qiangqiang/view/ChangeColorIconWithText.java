@@ -37,6 +37,7 @@ public class ChangeColorIconWithText extends View {
     private Canvas mCanvas;
     private Bitmap mBitmap;
     private Paint mPaint;
+    private Paint mBitmapPaint;
     private float mAlpha;
     private Rect mIconRect;
     private Rect mTextBound;
@@ -74,6 +75,10 @@ public class ChangeColorIconWithText extends View {
         mTextPaint.setDither(true);
         mTextPaint.setAntiAlias(true);
         mTextPaint.getTextBounds(mText, 0, mText.length(), mTextBound);
+        mBitmapPaint = new Paint();
+        mBitmapPaint.setDither(true);
+        mBitmapPaint.setFilterBitmap(true);
+        mBitmapPaint.setAntiAlias(true);
     }
 
     @Override
@@ -112,7 +117,7 @@ public class ChangeColorIconWithText extends View {
         drawTargetBitmap(alpha);
         drawSourceText(canvas, alpha);
         drawTargetText(canvas, alpha);
-        canvas.drawBitmap(mBitmap, 0, 0, null);
+        canvas.drawBitmap(mBitmap, 0, 0, mBitmapPaint);
     }
 
     private void drawSourceBitmap(Canvas canvas, int alpha){
